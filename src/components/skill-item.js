@@ -5,7 +5,7 @@ import { StyleSheet, css } from 'aphrodite'
 import SmartLink from './smart-link'
 
 const styles = StyleSheet.create({
-  skill: {
+  item: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -22,16 +22,23 @@ const styles = StyleSheet.create({
   }
 })
 
-const SkillIcon = ({ skill }) => {
+const SkillItem = ({ skill }) => {
   return (
-    <SmartLink className={css(styles.skill)} href={skill.link ? skill.link : '/'}>
-      <img src={skill.icon} className={css(styles.icon)} alt={`${skill.name} logo`} />
+    <SmartLink
+      className={css(styles.item)}
+      href={skill.link ? skill.link : '/'}
+    >
+      <img
+        src={skill.icon}
+        className={css(styles.icon)}
+        alt={`${skill.name} logo`}
+      />
       <div className={css(styles.text)}>{skill.name}</div>
     </SmartLink>
   )
 }
 
-SkillIcon.propTypes = {
+SkillItem.propTypes = {
   skill: PropTypes.shape({
     name: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
@@ -39,4 +46,4 @@ SkillIcon.propTypes = {
   }).isRequired
 }
 
-export default SkillIcon
+export default SkillItem

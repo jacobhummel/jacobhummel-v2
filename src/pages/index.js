@@ -9,8 +9,10 @@ import globals from '../utils/globals'
 
 import headshot from '../images/jacob-hummel.jpg'
 import SkillList from '../components/skill-list'
+import ExperienceList from '../components/experience-list'
 
 import { languages, technologies, workflow } from '../data/skills'
+import { work, education } from '../data/experience'
 
 const styles = StyleSheet.create({
   targetLink: {
@@ -50,12 +52,15 @@ const IndexPage = () => (
     </Header>
     <Section title='Skills'>
       <SkillList title='Languages' skills={languages} />
-      <SkillList title='Frameworks, Libraries, and Platforms' skills={technologies} />
+      <SkillList
+        title='Frameworks, Libraries, and Platforms'
+        skills={technologies}
+      />
       <SkillList title='Workflow and Tools' skills={workflow} />
     </Section>
     <Section title='Experience'>
-      <h4>Work</h4>
-      <h4>School</h4>
+      <ExperienceList title='Work' experiences={work} />
+      <ExperienceList title='Education' experiences={education} />
     </Section>
   </Layout>
 )

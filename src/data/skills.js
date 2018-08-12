@@ -139,7 +139,7 @@ export const technologies = [
 
 export const workflow = [
   {
-    name: 'Invision',
+    name: 'InVision',
     icon: IconInvision,
     link: 'https://www.invisionapp.com/'
   },

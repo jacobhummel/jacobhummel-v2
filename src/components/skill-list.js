@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, css } from 'aphrodite'
 
-import SkillIcon from '../components/skill-icon'
+import SkillItem from '../components/skill-item'
 
 const styles = StyleSheet.create({
-  skillRow: {
+  list: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridGap: 30,
@@ -20,9 +20,9 @@ const SkillList = ({ title, skills }) => {
   return (
     <div>
       <h4>{title}</h4>
-      <div className={css(styles.skillRow)}>
+      <div className={css(styles.list)}>
         {skills.map(skill => (
-          <SkillIcon key={skill.name} skill={skill} />
+          <SkillItem key={skill.name} skill={skill} />
         ))}
       </div>
     </div>
