@@ -8,10 +8,10 @@ const styles = StyleSheet.create({
   skillRow: {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
-    gridGap: 10,
-    marginBottom: 30,
+    gridGap: 30,
+    marginBottom: 45,
     '@media screen and (min-width: 40em)': {
-      gridTemplateColumns: 'repeat(8, 1fr)'
+      gridTemplateColumns: 'repeat(7, 1fr)'
     }
   }
 })

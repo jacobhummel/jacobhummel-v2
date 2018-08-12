@@ -27,11 +27,13 @@ const SmartLink = ({ children, alt, href, className }) => {
 SmartLink.propTypes = {
   children: PropTypes.node.isRequired,
   href: PropTypes.string.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  alt: PropTypes.string
 }
 
 SmartLink.defaultProps = {
-  className: ''
+  className: '',
+  alt: undefined
 }
 
 export default SmartLink
