@@ -5,6 +5,7 @@
   "author": "Jacob Hummel <jacob@jacobhummel.com>",
   "dependencies": {
     "aphrodite": "^2.2.2",
+    "devicon-2.2": "^2.2.0",
     "gatsby": "next",
     "gatsby-plugin-manifest": "next",
     "gatsby-plugin-offline": "next",

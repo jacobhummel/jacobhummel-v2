@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   header: {
     display: 'flex',
     flexDirection: 'column',
-    padding: '25vh 0',
+    padding: '15vh 0'
   },
   headshot: {
     borderRadius: '50%',
@@ -16,20 +16,14 @@ const styles = StyleSheet.create({
   },
   intro: {
     fontWeight: 'normal',
-    lineHeight: '2rem',
-  },
+    lineHeight: '2rem'
+  }
 })
 
 const Header = ({ children, headshot }) => (
   <div className={css(styles.header)}>
-    <img
-      alt='headshot'
-      src={headshot}
-      className={css(styles.headshot)}
-    />
-    <h1 className={css(styles.intro)}>
-      {children}
-    </h1>
+    <img alt='headshot' src={headshot} className={css(styles.headshot)} />
+    <h1 className={css(styles.intro)}>{children}</h1>
   </div>
 )
 

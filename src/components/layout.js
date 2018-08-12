@@ -5,6 +5,9 @@ import { StaticQuery, graphql } from 'gatsby'
 import { StyleSheet, css } from 'aphrodite'
 
 const styles = StyleSheet.create({
+  body: {
+    backgroundColor: '#fff'
+  },
   container: {
     margin: '0 auto',
     maxWidth: 825,
@@ -25,7 +28,7 @@ const Layout = ({ children, fullWidth, data }) => (
       }
     `}
     render={data => (
-      <React.Fragment>
+      <div className={css(styles.body)}>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -35,10 +38,8 @@ const Layout = ({ children, fullWidth, data }) => (
         >
           <html lang='en' />
         </Helmet>
-        <div className={!fullWidth && css(styles.container)}>
-          {children}
-        </div>
-      </React.Fragment>
+        <div className={css(styles.container)}>{children}</div>
+      </div>
     )}
   />
 )
@@ -49,7 +50,7 @@ Layout.propTypes = {
 }
 
 Layout.defaultProps = {
-  fullWidth: false,
+  fullWidth: false
 }
 
 export default Layout

@@ -5,11 +5,7 @@ import { Link } from 'gatsby'
 const SmartLink = ({ children, alt, href, className }) => {
   if (href.startsWith('/')) {
     return (
-      <Link
-        to={href}
-        className={className}
-        alt={alt}
-      >
+      <Link to={href} className={className} alt={alt}>
         {children}
       </Link>
     )
@@ -31,11 +27,11 @@ const SmartLink = ({ children, alt, href, className }) => {
 SmartLink.propTypes = {
   children: PropTypes.node.isRequired,
   href: PropTypes.string.isRequired,
-  className: PropTypes.string,
+  className: PropTypes.string
 }
 
 SmartLink.defaultProps = {
-  className: '',
+  className: ''
 }
 
 export default SmartLink
