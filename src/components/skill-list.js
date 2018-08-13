@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 1fr)',
     gridGap: 30,
-    marginBottom: 45,
+    marginBottom: 50,
     '@media screen and (min-width: 40em)': {
       gridTemplateColumns: 'repeat(7, 1fr)'
     }

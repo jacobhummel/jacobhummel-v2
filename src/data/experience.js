@@ -36,7 +36,7 @@ export const work = [
     title: 'Technology Intern',
     duration: 'Summer 2013',
     icon: IconThomson,
-    link: 'https://www.target.com',
+    link: 'https://www.thomsonreuters.com/en.html',
     description: 'Full-Stack web developer using the Spring MVC Framework. Added features and improvements to an internal business application.'
   },
   {
@@ -44,7 +44,7 @@ export const work = [
     title: 'Web Development Intern',
     duration: 'Summer 2012',
     icon: IconEmerson,
-    link: 'https://www.target.com',
+    link: 'http://www.emerson.com/en-us/automation/fisher',
     description: 'Full-Stack web developer using ASP.NET Web Forms. Rewrote two business critical apps for speed and usability.'
   }
 ]
@@ -53,9 +53,9 @@ export const education = [
   {
     name: 'Iowa State University',
     title: 'Software Engineering',
-    duration: 'Fall 2010 - Spr 2014',
+    duration: 'Aug 2010 - May 2014',
     icon: IconIastate,
     link: 'https://iastate.edu/',
-    description: ''
+    description: 'Full-Stack web developer using ASP.NET Web Forms. Rewrote two business critical apps for speed and usability.'
   }
 ]

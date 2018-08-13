@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
   },
   duration: {
     textTransform: 'uppercase',
-    fontSize: 12
+    fontSize: 12,
+    textAlign: 'right'
   },
   description: {
     fontSize: 14,
@@ -57,7 +58,12 @@ const ExperienceItem = ({ experience }) => {
       />
       <div className={css(styles.info)}>
         <div className={css(styles.role)}>
-          <h5 className={css(styles.name)}>{experience.name}</h5>
+          <SmartLink
+            href={experience.link}
+            className={css(styles.name)}
+          >
+            {experience.name}
+          </SmartLink>
           <div className={css(styles.duration)}>{experience.duration}</div>
         </div>
         <div className={css(styles.title)}>{experience.title}</div>

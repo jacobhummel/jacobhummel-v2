@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, css } from 'aphrodite'
 
+import globals from '../utils/globals'
 import SmartLink from './smart-link'
 
 const styles = StyleSheet.create({
@@ -18,7 +19,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 13,
-    textAlign: 'center'
+    textAlign: 'center',
+    color: globals.color.text
   }
 })
 
